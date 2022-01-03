@@ -12,12 +12,15 @@
       crossorigin="anonymous"
     />
 
-   <!-- bootstrap-icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-
+    <!-- bootstrap-icons -->
     <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <!-- mapbox -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -213,7 +216,6 @@
       <div class="container">
         <h2 class="text-center mb-4">Frequently Asked Questions</h2>
         <div class="accordion accordion-flush" id="questions">
-
           <!-- Item 1 -->
 
           <div class="accordion-item">
@@ -463,7 +465,7 @@
     </section>
 
     <!-- Contact & Map -->
-    
+
     <section class="p-5">
       <div class="container">
         <div class="row g-4">
@@ -570,19 +572,19 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <!-- mapbox js -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
 
     <script>
       mapboxgl.accessToken =
-        "pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw";
+        "pk.eyJ1IjoibXVraXRiZCIsImEiOiJja3h5ZGkydmNhYW5zMm9xM3QzcnN0d3NnIn0.POPISmMpz_kmSLPo9E5XwQ";
       var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
+
         center: [-71.060982, 42.35725],
         zoom: 18,
       });
     </script>
   </body>
 </html>
-
-<!-- new -->
